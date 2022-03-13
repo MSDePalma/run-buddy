@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Run Buddy></title>
+        <title>Run Buddy</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
       <body>
@@ -30,17 +30,18 @@
   </header>
   
   <!-- hero/jumbotron -->
-<section>
-  <div>
+<section class="hero">
+  <div class="hero-form">
     <h3>Get Started Today</h3>
-    <p>Fill out this form and one of our trainers will schedule a colsult</p>
+    <p>Fill out this form and one of our trainers will schedule a colsult!</p>
+
     <!-- Add Form Element-->
     <form>
       <label for="name">Enter full name:</label>
       <input type="text" placeholder="Your Name" name="name" id="name" />
       <label for="email">Enter Email Address:</label>
       <input type="text" placeholder="Email Address" name="email" id="email" />
-      <label for="phone">Phone Number:</label>
+      <label for="phone">Enter a telephone Number:</label>
       <input type="text" placeholder="Phone Number" name="phone" id="phone" />
       <p>
         Have you worked out wth a trainer before?
@@ -51,17 +52,18 @@
       </p>
       <form>
         <p>
-          I acknowledge I am at least 18 years of age
-          <input type="radio" name="age-confirm" id="18 plus-yes" />
-          <label for="18 plus-yes">Yes</label>
-          <input type="radio" name="age-confirm" id="18 plus-no" />
-          <label for="18 plus-no">No</label>
+          <label for="checkbox" >
+            I acknowledge that I am at least 18 years of age.
+          </label>
+          <input type="checkbox" name="age-confirm" id="checkbox" />
         </p>
-      </form>
-      </p>
+        <button type="submit">
+          Get running!
+        </button>
     </form>
   </div>
 </section>
+<!--end hero-->
 
 <!-- "what we do" section -->
 <section>
